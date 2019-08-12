@@ -1116,7 +1116,7 @@ h2 {
 	position: relative;
 	top: -6px;
 }
-@media (max-width: 360px) {
+@media (max-width: 320px) {
 	.profile__name {
 		top: 0;
 		padding-right: 0;
