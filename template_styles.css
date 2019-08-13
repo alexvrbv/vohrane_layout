@@ -833,10 +833,10 @@ h2 {
 		padding-right: 0;
 	}
 }
-.left-column {
-	margin-top: 28px;
+.column {
+	margin-top: 30px;
 }
-.left-column__filter {
+.column__filter {
 	padding: 30px;
 	background-color: #ffffff;
 	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
@@ -844,48 +844,48 @@ h2 {
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 767px) {
-	.left-column__filter {
+	.column__filter {
 		padding: 30px 15px;
 		overflow: hidden;
 	}
 }
-.left-column-filter__group {
+.column-filter__group {
 	margin-top: 30px;
 }
-.left-column-filter__group:first-child {
+.column-filter__group:first-child {
 	margin-top: 0;
 }
-.left-column-filter__title {
+.column-filter__title {
 	font-size: 13px;
 	line-height: 1.2em;
 	font-weight: 500;
 }
-.left-column-filter__buttons {
+.column-filter__buttons {
 	margin-top: 30px;
 }
-.left-column-filter__btn {
+.column-filter__btn {
 	margin-top: 12px;
 	width: 100%;
 }
-.left-column-filter__btn:first-child {
+.column-filter__btn:first-child {
 	margin-top: 0;
 }
-.left-column__banner {
+.column__banner {
 	margin-top: 30px;
 	background-color: #ffffff;
 }
-.left-column-banner__title {
+.column-banner__title {
 	padding: 30px;
 	font-size: 13px;
 	line-height: 1.4em;
 	font-weight: 500;
 }
 @media (max-width: 767px) {
-	.left-column-banner__title {
+	.column-banner__title {
 		padding: 30px 15px;
 	}
 }
-.left-column-banner__img {
+.column-banner__img {
 	min-height: 250px;
 	background-color: #000000;
     background-repeat: no-repeat;
@@ -989,7 +989,6 @@ h2 {
 }
 .profiles__list,
 .companies__list {
-	margin-top: -2px;
 	margin-left: -15px;
 	margin-right: -15px;
 	display: flex;
