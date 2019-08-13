@@ -15,6 +15,7 @@ function phoneMaskInit() {
 function matchHeightInit() {
     //$('.advantage').matchHeight();
     $('.profile__inner').matchHeight({byRow: false});
+    $('.company__inner').matchHeight({byRow: false});
 }
 
 //Forms
