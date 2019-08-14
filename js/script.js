@@ -3,6 +3,7 @@
 $(document).ready(function(){
     phoneMaskInit();
     matchHeightInit();
+    ratingValueChangeInit();
     formsInit();
 });
 
@@ -16,6 +17,30 @@ function matchHeightInit() {
     //$('.advantage').matchHeight();
     $('.profile__inner').matchHeight({byRow: false});
     $('.company__inner').matchHeight({byRow: false});
+}
+
+//Rating value change
+function ratingValueChangeInit() {
+    $.mask.definitions['r'] = "[1-5]";
+    $("[name='rating']").mask("r");
+    $('.input-minus').click(function () {
+        var input = $(this).parent().find('input');
+        var value = input.val() ? input.val() : 6;
+        var count = parseInt(value) - 1;
+        count = count < 1 ? 1 : count;
+        input.val(count);
+        input.change();
+        return false;
+    });
+    $('.input-plus').click(function () {
+        var input = $(this).parent().find('input');
+        var value = input.val() ? input.val() : 0;
+        var count = parseInt(value) + 1;
+        count = count > 5 ? 5 : count;
+        input.val(count);
+        input.change();
+        return false;
+    });
 }
 
 //Forms
