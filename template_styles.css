@@ -789,13 +789,15 @@ h2 {
 }
 .wrapper--profiles,
 .wrapper--companies,
-.wrapper--profile-page {
+.wrapper--profile-page,
+.wrapper--company-page {
 	padding-bottom: 80px;
 	overflow: visible;
 }
 .col--profiles,
 .col--companies,
-.col--profile-page {
+.col--profile-page,
+.col--company-page {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -1281,30 +1283,35 @@ h2 {
 .company:focus .company__img img {
 	filter: grayscale(0);
 }
-.profile-page__part--1 {
+.profile-page__part--1,
+.company-page__part--1 {
 	flex: 0 0 81%;
 	max-width: 81%;
 	position: relative;
 }
 @media (max-width: 1480px) {
-	.profile-page__part--1 {
+	.profile-page__part--1,
+	.company-page__part--1 {
 		flex: 0 0 75%;
 		max-width: 75%;
 	}
 }
 @media (max-width: 1199px) {
-	.profile-page__part--1 {
+	.profile-page__part--1,
+	.company-page__part--1 {
 		flex: 0 0 60%;
 		max-width: 60%;
 	}
 }
 @media (max-width: 767px) {
-	.profile-page__part--1 {
+	.profile-page__part--1,
+	.company-page__part--1 {
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
 }
-.profile-page__content {
+.profile-page__content,
+.company-page__content {
 	margin-top: 30px;
 	background-color: #ffffff;
 	padding: 30px;
@@ -1317,41 +1324,57 @@ h2 {
 	overflow: hidden;
 }
 @media (max-width: 767px) {
-	.profile-page__content {
+	.profile-page__content,
+	.company-page__content {
 		padding: 15px;
 	}
 }
-.profile-page-content__part--1 {
+.profile-page-content__part--1,
+.company-page-content__part--1 {
 	flex: 0 0 20%;
 	max-width: 20%;
 	position: relative;
 	padding-right: 30px;
 }
 @media (max-width: 1600px) {
-	.profile-page-content__part--1 {
+	.profile-page-content__part--1,
+	.company-page-content__part--1 {
 		flex: 0 0 30%;
 		max-width: 30%;
 	}
 }
 @media (max-width: 1199px) {
-	.profile-page-content__part--1 {
+	.profile-page-content__part--1,
+	.company-page-content__part--1 {
 		flex: 0 0 40%;
 		max-width: 40%;
 	}
 }
 @media (max-width: 767px) {
-	.profile-page-content__part--1 {
+	.profile-page-content__part--1,
+	.company-page-content__part--1 {
 		padding-right: 15px;
 	}
 }
 @media (max-width: 480px) {
-	.profile-page-content__part--1 {
+	.profile-page-content__part--1,
+	.company-page-content__part--1 {
 		flex: 0 0 100%;
 		max-width: 100%;
 		padding-right: 0;
 	}
 }
-.profile-page-content__part--2 {
+.company-page-content__img {
+	padding: 40px;
+	background-color: #f6f7f8;
+}
+@media (max-width: 991px) {
+	.company-page-content__img {
+		padding: 15px;
+	}
+}
+.profile-page-content__part--2,
+.company-page-content__part--2 {
 	flex: 0 0 80%;
 	max-width: 80%;
 	position: relative;
@@ -1363,48 +1386,56 @@ h2 {
 	align-content: flex-start;
 }
 @media (max-width: 1600px) {
-	.profile-page-content__part--2 {
+	.profile-page-content__part--2,
+	.company-page-content__part--2 {
 		flex: 0 0 70%;
 		max-width: 70%;
 	}
 }
 @media (max-width: 1199px) {
-	.profile-page-content__part--2 {
+	.profile-page-content__part--2,
+	.company-page-content__part--2 {
 		flex: 0 0 60%;
 		max-width: 60%;
 	}
 }
 @media (max-width: 480px) {
-	.profile-page-content__part--2 {
+	.profile-page-content__part--2,
+	.company-page-content__part--2 {
 		margin-top: 15px;
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
 }
-.profile-page-content__edit-btn {
+.profile-page-content__edit-btn,
+.company-page-content__edit-btn {
 	position: absolute;
 	top: 0;
 	right: 0;
 	width: calc(25% - 30px);
 }
 @media (max-width: 1600px) {
-	.profile-page-content__edit-btn {
+	.profile-page-content__edit-btn,
+	.company-page-content__edit-btn {
 		width: auto;
 		padding: 10px 15px;
 	}
 }
 @media (max-width: 1199px) {
-	.profile-page-content__edit-btn {
+	.profile-page-content__edit-btn,
+	.company-page-content__edit-btn {
 		position: static;
 		margin-bottom: 20px;
 	}
 }
 @media (max-width: 767px) {
-	.profile-page-content__edit-btn {
+	.profile-page-content__edit-btn,
+	.company-page-content__edit-btn {
 		margin-bottom: 15px;
 	}
 }
-.profile-page-content__title {
+.profile-page-content__title,
+.company-page-content__title {
 	margin-top: 20px;
 	padding-right: 180px;
 	flex: 0 0 100%;
@@ -1417,12 +1448,14 @@ h2 {
 	text-transform: uppercase;
 }
 @media (max-width: 1600px) {
-	.profile-page-content__title {
+	.profile-page-content__title,
+	.company-page-content__title {
 		padding-right: 160px;
 	}
 }
 @media (max-width: 1199px) {
-	.profile-page-content__title {
+	.profile-page-content__title,
+	.company-page-content__title {
 		margin-top: 0;
 		padding-right: 0;
 	}
@@ -1439,7 +1472,8 @@ h2 {
 	text-transform: none;
 	letter-spacing: normal;
 }
-.profile-page-content__properties {
+.profile-page-content__properties,
+.company-page-content__properties {
 	margin-top: 30px;
 	flex: 0 0 75%;
 	max-width: 75%;
@@ -1447,72 +1481,98 @@ h2 {
 	column-gap: 30px;
 }
 @media (max-width: 1600px) {
-	.profile-page-content__properties {
+	.profile-page-content__properties,
+	.company-page-content__properties {
 		flex: 0 0 66.66666%;
 		max-width: 66.66666%;
 		column-count: 2;
 	}
 }
 @media (max-width: 1199px) {
-	.profile-page-content__properties {
+	.profile-page-content__properties,
+	.company-page-content__properties {
 		flex: 0 0 100%;
 		max-width: 100%;
 		column-count: 1;
 	}
 }
 @media (max-width: 767px) {
-	.profile-page-content__properties {
+	.profile-page-content__properties,
+	.company-page-content__properties {
 		margin-top: 15px;
 	}
 }
-.profile-page-property {
+.profile-page-property,
+.company-page-property {
 	margin-bottom: 30px;
+	page-break-inside: avoid;
+	break-inside: avoid;
 }
 @media (max-width: 767px) {
-	.profile-page-property {
+	.profile-page-property,
+	.company-page-property {
 		margin-bottom: 15px;
 	}
 }
-.profile-page-property__name {
+.profile-page-property__name,
+.company-page-property__name {
 	color: #b7b7b7;
 }
-.profile-page-property__value {
+.profile-page-property__value,
+.company-page-property__value {
 	margin-top: 8px;
 }
-.profile-page-content__additional {
+.profile-page-property__value a,
+.company-page-property__value a {
+	color: #000000;
+}
+.profile-page-property__value a:hover,
+.profile-page-property__value a:focus,
+.company-page-property__value a:hover,
+.company-page-property__value a:focus {
+	text-decoration: underline;
+}
+.profile-page-content__additional,
+.company-page-content__additional {
 	margin-top: 30px;
 	flex: 0 0 25%;
 	max-width: 25%;
 	padding-left: 30px;
 }
 @media (max-width: 1600px) {
-	.profile-page-content__additional {
+	.profile-page-content__additional,
+	.company-page-content__additional {
 		flex: 0 0 33.33333%;
 		max-width: 33.33333%;
 	}
 }
 @media (max-width: 1199px) {
-	.profile-page-content__additional {
+	.profile-page-content__additional,
+	.company-page-content__additional {
 		flex: 0 0 100%;
 		max-width: 100%;
 		padding-left: 0;
 		margin-top: 0;
 	}
 }
-.profile-page-content__additional-title {
+.profile-page-content__additional-title,
+.company-page-content__additional-title {
 	line-height: 1.4em;
 }
-.profile-page-content__additional-text {
+.profile-page-content__additional-text,
+.company-page-content__additional-text {
 	margin-top: 30px;
 	color: #b7b7b7;
 	line-height: 1.4em;
 }
 @media (max-width: 767px) {
-	.profile-page-content__additional-text {
+	.profile-page-content__additional-text,
+	.company-page-content__additional-text {
 		margin-top: 15px;
 	}
 }
-.profile-page__comments {
+.profile-page__comments,
+.company-page__vacancies {
 	margin-left: -15px;
 	margin-right: -15px;
 	display: flex;
@@ -1522,19 +1582,28 @@ h2 {
 	align-items: stretch;
 	align-content: flex-start;
 }
-.comment {
-	flex: 0 0 50%;
-	max-width: 50%;
+.comment,
+.vacancy {
 	margin-top: 30px;
 	padding: 0 15px;
 }
+.comment {
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+.vacancy {
+	flex: 0 0 33.33333%;
+	max-width: 33.33333%;
+}
 @media (max-width: 1280px) {
-	.comment {
+	.comment,
+	.vacancy {
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
 }
-.comment__inner {
+.comment__inner,
+.vacancy__inner {
 	background-color: #ffffff;
 	display: flex;
 	flex-direction: row;
@@ -1544,8 +1613,18 @@ h2 {
 	align-content: stretch;
 	overflow: hidden;
 }
+.vacancy__inner {
+	padding: 35px 40px;
+}
+@media (max-width: 767px) {
+	.vacancy__inner {
+		padding: 30px 15px;
+	}
+}
 .comment:hover .comment__inner,
-.comment:focus .comment__inner {
+.comment:focus .comment__inner,
+.vacancy:hover .vacancy__inner,
+.vacancy:focus .vacancy__inner {
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
@@ -1657,6 +1736,23 @@ h2 {
 	.comment__text {
 		margin-top: 10px;
 	}
+}
+.vacancy__title {
+	flex: 0 0 100%;
+	max-width: 100%;
+	color: #000000;
+	font-family: 'Bebas Neue';
+	font-size: 20px;
+	line-height: 1em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.vacancy__region {
+	flex: 0 0 100%;
+	max-width: 100%;
+	margin-top: 15px;
+	color: #000000;
 }
 .comments-form {
 	margin-top: 30px;
@@ -1795,25 +1891,29 @@ h2 {
 		text-align: left;
 	}
 }
-.profile-page__part--2 {
+.profile-page__part--2,
+.company-page__part--2 {
 	flex: 0 0 19%;
 	max-width: 19%;
 	padding-left: 30px;
 }
 @media (max-width: 1480px) {
-	.profile-page__part--2 {
+	.profile-page__part--2,
+	.company-page__part--2 {
 		flex: 0 0 25%;
 		max-width: 25%;
 	}
 }
 @media (max-width: 1199px) {
-	.profile-page__part--2 {
+	.profile-page__part--2,
+	.company-page__part--2 {
 		flex: 0 0 40%;
 		max-width: 40%;
 	}
 }
 @media (max-width: 767px) {
-	.profile-page__part--2 {
+	.profile-page__part--2,
+	.company-page__part--2 {
 		flex: 0 0 100%;
 		max-width: 100%;
 		padding-left: 0;
