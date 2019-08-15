@@ -373,14 +373,28 @@ h2 {
 }
 .form-field input[type="text"],
 .form-field input[type="email"],
-.form-field textarea {
+.form-field input[type="file"]:not(.jfilestyle),
+.form-field textarea,
+.form-field select {
 	font-size: 12px;
 	line-height: 1em;
 	color: #959595;
 	background-color: transparent;
 	border: 1px solid #cccccc;
 	padding: 15px 20px;
-	width: 100%;
+	width: 100% !important;
+}
+.form-field .jfilestyle input[type="text"] {
+	border: none;
+}
+.form-field select {
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+	background-image: url(img/arrow-bottom--gray.svg);
+	background-repeat: no-repeat;
+	background-size: 9px 5px;
+	background-position: right 15px top 50%;
 }
 .form-field input::-webkit-input-placeholder {
 	color: #959595;
@@ -445,6 +459,34 @@ h2 {
 	font-size: 12px;
 	line-height: 1.2em;
 	color: #ffffff;
+}
+.jfilestyle {
+	vertical-align: top;
+	width: 100%;
+	margin-bottom: 0;
+	border: 1px solid #cccccc;
+	overflow: hidden;
+}
+.focus-jfilestyle {
+	position: absolute;
+	right: 1px;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+div.jfilestyle label {
+	border: none;
+	padding: 10px 14px;
+	color: #959595;
+	font-size: 12px;
+	line-height: 1em;
+	text-decoration: underline;
+	text-transform: uppercase;
 }
 .form-submit {
 	margin-top: 30px;
@@ -790,14 +832,18 @@ h2 {
 .wrapper--profiles,
 .wrapper--companies,
 .wrapper--profile-page,
-.wrapper--company-page {
+.wrapper--profile-edit-page,
+.wrapper--company-page,
+.wrapper--vacancy-page {
 	padding-bottom: 80px;
 	overflow: visible;
 }
 .col--profiles,
 .col--companies,
 .col--profile-page,
-.col--company-page {
+.col--profile-edit-page,
+.col--company-page,
+.col--vacancy-page {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -1083,7 +1129,8 @@ h2 {
 	}
 }
 .profile__rating,
-.profile-page-content__rating {
+.profile-page-content__rating,
+.profile-edit-page-content__rating {
 	position: absolute;
 	top: -17px;
 	left: -17px;
@@ -1107,7 +1154,8 @@ h2 {
 }
 @media (max-width: 767px) {
 	.profile__rating,
-	.profile-page-content__rating {
+	.profile-page-content__rating,
+	.profile-edit-page-content__rating {
 		top: -8px;
 		left: -8px;
 	}	
@@ -1284,34 +1332,44 @@ h2 {
 	filter: grayscale(0);
 }
 .profile-page__part--1,
-.company-page__part--1 {
+.profile-edit-page__part--1,
+.company-page__part--1,
+.vacancy-page__part--1 {
 	flex: 0 0 81%;
 	max-width: 81%;
 	position: relative;
 }
 @media (max-width: 1480px) {
 	.profile-page__part--1,
-	.company-page__part--1 {
+	.profile-edit-page__part--1,
+	.company-page__part--1,
+	.vacancy-page__part--1 {
 		flex: 0 0 75%;
 		max-width: 75%;
 	}
 }
 @media (max-width: 1199px) {
 	.profile-page__part--1,
-	.company-page__part--1 {
+	.profile-edit-page__part--1,
+	.company-page__part--1,
+	.vacancy-page__part--1 {
 		flex: 0 0 60%;
 		max-width: 60%;
 	}
 }
 @media (max-width: 767px) {
 	.profile-page__part--1,
-	.company-page__part--1 {
+	.profile-edit-page__part--1,
+	.company-page__part--1,
+	.vacancy-page__part--1 {
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
 }
 .profile-page__content,
-.company-page__content {
+.profile-edit-page__content,
+.company-page__content,
+.vacancy-page__content {
 	margin-top: 30px;
 	background-color: #ffffff;
 	padding: 30px;
@@ -1325,12 +1383,16 @@ h2 {
 }
 @media (max-width: 767px) {
 	.profile-page__content,
-	.company-page__content {
+	.profile-edit-page__content,
+	.company-page__content,
+	.vacancy-page__content {
 		padding: 15px;
 	}
 }
 .profile-page-content__part--1,
-.company-page-content__part--1 {
+.profile-edit-page-content__part--1,
+.company-page-content__part--1,
+.vacancy-page-content__part--1 {
 	flex: 0 0 20%;
 	max-width: 20%;
 	position: relative;
@@ -1338,43 +1400,55 @@ h2 {
 }
 @media (max-width: 1600px) {
 	.profile-page-content__part--1,
-	.company-page-content__part--1 {
+	.profile-edit-page-content__part--1,
+	.company-page-content__part--1,
+	.vacancy-page-content__part--1 {
 		flex: 0 0 30%;
 		max-width: 30%;
 	}
 }
 @media (max-width: 1199px) {
 	.profile-page-content__part--1,
-	.company-page-content__part--1 {
+	.profile-edit-page-content__part--1,
+	.company-page-content__part--1,
+	.vacancy-page-content__part--1 {
 		flex: 0 0 40%;
 		max-width: 40%;
 	}
 }
 @media (max-width: 767px) {
 	.profile-page-content__part--1,
-	.company-page-content__part--1 {
+	.profile-edit-page-content__part--1,
+	.company-page-content__part--1,
+	.vacancy-page-content__part--1 {
 		padding-right: 15px;
 	}
 }
 @media (max-width: 480px) {
 	.profile-page-content__part--1,
-	.company-page-content__part--1 {
+	.profile-edit-page-content__part--1,
+	.company-page-content__part--1,
+	.vacancy-page-content__part--1 {
 		flex: 0 0 100%;
 		max-width: 100%;
 		padding-right: 0;
 	}
 }
-.company-page-content__img {
+.company-page-content__img,
+.vacancy-page-content__img {
 	padding: 40px;
 	background-color: #f6f7f8;
 }
 @media (max-width: 991px) {
-	.company-page-content__img {
+	.company-page-content__img,
+	.vacancy-page-content__img {
 		padding: 15px;
 	}
 }
 .profile-page-content__part--2,
-.company-page-content__part--2 {
+.profile-edit-page-content__part--2,
+.company-page-content__part--2,
+.vacancy-page-content__part--2 {
 	flex: 0 0 80%;
 	max-width: 80%;
 	position: relative;
@@ -1387,28 +1461,35 @@ h2 {
 }
 @media (max-width: 1600px) {
 	.profile-page-content__part--2,
-	.company-page-content__part--2 {
+	.profile-edit-page-content__part--2,
+	.company-page-content__part--2,
+	.vacancy-page-content__part--2 {
 		flex: 0 0 70%;
 		max-width: 70%;
 	}
 }
 @media (max-width: 1199px) {
 	.profile-page-content__part--2,
-	.company-page-content__part--2 {
+	.profile-edit-page-content__part--2,
+	.company-page-content__part--2,
+	.vacancy-page-content__part--2 {
 		flex: 0 0 60%;
 		max-width: 60%;
 	}
 }
 @media (max-width: 480px) {
 	.profile-page-content__part--2,
-	.company-page-content__part--2 {
+	.profile-edit-page-content__part--2,
+	.company-page-content__part--2,
+	.vacancy-page-content__part--2 {
 		margin-top: 15px;
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
 }
 .profile-page-content__edit-btn,
-.company-page-content__edit-btn {
+.company-page-content__edit-btn,
+.vacancy-page-content__edit-btn {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1416,26 +1497,30 @@ h2 {
 }
 @media (max-width: 1600px) {
 	.profile-page-content__edit-btn,
-	.company-page-content__edit-btn {
+	.company-page-content__edit-btn,
+	.vacancy-page-content__edit-btn {
 		width: auto;
 		padding: 10px 15px;
 	}
 }
 @media (max-width: 1199px) {
 	.profile-page-content__edit-btn,
-	.company-page-content__edit-btn {
+	.company-page-content__edit-btn,
+	.vacancy-page-content__edit-btn {
 		position: static;
 		margin-bottom: 20px;
 	}
 }
 @media (max-width: 767px) {
 	.profile-page-content__edit-btn,
-	.company-page-content__edit-btn {
+	.company-page-content__edit-btn,
+	.vacancy-page-content__edit-btn {
 		margin-bottom: 15px;
 	}
 }
 .profile-page-content__title,
-.company-page-content__title {
+.company-page-content__title,
+.vacancy-page-content__title {
 	margin-top: 20px;
 	padding-right: 180px;
 	flex: 0 0 100%;
@@ -1449,21 +1534,25 @@ h2 {
 }
 @media (max-width: 1600px) {
 	.profile-page-content__title,
-	.company-page-content__title {
+	.company-page-content__title,
+	.vacancy-page-content__title {
 		padding-right: 160px;
 	}
 }
 @media (max-width: 1199px) {
 	.profile-page-content__title,
-	.company-page-content__title {
+	.company-page-content__title,
+	.vacancy-page-content__title {
 		margin-top: 0;
 		padding-right: 0;
 	}
 }
-.profile-page-content__title > span:first-child {
+.profile-page-content__title > span:first-child,
+.vacancy-page-content__title > span:first-child {
 	padding-right: 15px;
 }
-.profile-page-content__salary {
+.profile-page-content__salary,
+.vacancy-page-content__salary {
 	display: inline-block;
 	font-family: 'Montserrat';
 	font-size: 18px;
@@ -1473,7 +1562,8 @@ h2 {
 	letter-spacing: normal;
 }
 .profile-page-content__properties,
-.company-page-content__properties {
+.company-page-content__properties,
+.vacancy-page-content__properties {
 	margin-top: 30px;
 	flex: 0 0 75%;
 	max-width: 75%;
@@ -1482,7 +1572,8 @@ h2 {
 }
 @media (max-width: 1600px) {
 	.profile-page-content__properties,
-	.company-page-content__properties {
+	.company-page-content__properties,
+	.vacancy-page-content__properties {
 		flex: 0 0 66.66666%;
 		max-width: 66.66666%;
 		column-count: 2;
@@ -1490,7 +1581,8 @@ h2 {
 }
 @media (max-width: 1199px) {
 	.profile-page-content__properties,
-	.company-page-content__properties {
+	.company-page-content__properties,
+	.vacancy-page-content__properties {
 		flex: 0 0 100%;
 		max-width: 100%;
 		column-count: 1;
@@ -1498,42 +1590,51 @@ h2 {
 }
 @media (max-width: 767px) {
 	.profile-page-content__properties,
-	.company-page-content__properties {
+	.company-page-content__properties,
+	.vacancy-page-content__properties {
 		margin-top: 15px;
 	}
 }
 .profile-page-property,
-.company-page-property {
+.company-page-property,
+.vacancy-page-property {
 	margin-bottom: 30px;
 	page-break-inside: avoid;
 	break-inside: avoid;
 }
 @media (max-width: 767px) {
 	.profile-page-property,
-	.company-page-property {
+	.company-page-property,
+	.vacancy-page-property {
 		margin-bottom: 15px;
 	}
 }
 .profile-page-property__name,
-.company-page-property__name {
+.company-page-property__name,
+.vacancy-page-property__name {
 	color: #b7b7b7;
 }
 .profile-page-property__value,
-.company-page-property__value {
+.company-page-property__value,
+.vacancy-page-property__value {
 	margin-top: 8px;
 }
 .profile-page-property__value a,
-.company-page-property__value a {
+.company-page-property__value a,
+.vacancy-page-property__value a {
 	color: #000000;
 }
 .profile-page-property__value a:hover,
 .profile-page-property__value a:focus,
 .company-page-property__value a:hover,
-.company-page-property__value a:focus {
+.company-page-property__value a:focus,
+.vacancy-page-property__value a:hover,
+.vacancy-page-property__value a:focus {
 	text-decoration: underline;
 }
 .profile-page-content__additional,
-.company-page-content__additional {
+.company-page-content__additional,
+.vacancy-page-content__additional {
 	margin-top: 30px;
 	flex: 0 0 25%;
 	max-width: 25%;
@@ -1541,14 +1642,16 @@ h2 {
 }
 @media (max-width: 1600px) {
 	.profile-page-content__additional,
-	.company-page-content__additional {
+	.company-page-content__additional,
+	.vacancy-page-content__additional {
 		flex: 0 0 33.33333%;
 		max-width: 33.33333%;
 	}
 }
 @media (max-width: 1199px) {
 	.profile-page-content__additional,
-	.company-page-content__additional {
+	.company-page-content__additional,
+	.vacancy-page-content__additional {
 		flex: 0 0 100%;
 		max-width: 100%;
 		padding-left: 0;
@@ -1556,18 +1659,37 @@ h2 {
 	}
 }
 .profile-page-content__additional-title,
-.company-page-content__additional-title {
+.company-page-content__additional-title,
+.vacancy-page-content__additional-title {
 	line-height: 1.4em;
 }
 .profile-page-content__additional-text,
-.company-page-content__additional-text {
+.company-page-content__additional-text,
+.vacancy-page-content__additional-text {
 	margin-top: 30px;
 	color: #b7b7b7;
 	line-height: 1.4em;
 }
 @media (max-width: 767px) {
 	.profile-page-content__additional-text,
-	.company-page-content__additional-text {
+	.company-page-content__additional-text,
+	.vacancy-page-content__additional-text {
+		margin-top: 15px;
+	}
+}
+.profile-edit-form {
+	margin-top: -30px;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+@media (max-width: 767px) {
+	.profile-edit-form {
+		margin-top: -15px;
+	}
+}
+@media (max-width: 767px) {
+	.profile-edit-form__form-field,
+	.profile-edit-form__form-submit {
 		margin-top: 15px;
 	}
 }
@@ -1892,28 +2014,36 @@ h2 {
 	}
 }
 .profile-page__part--2,
-.company-page__part--2 {
+.profile-edit-page__part--2,
+.company-page__part--2,
+.vacancy-page__part--2 {
 	flex: 0 0 19%;
 	max-width: 19%;
 	padding-left: 30px;
 }
 @media (max-width: 1480px) {
 	.profile-page__part--2,
-	.company-page__part--2 {
+	.profile-edit-page__part--2,
+	.company-page__part--2,
+	.vacancy-page__part--2 {
 		flex: 0 0 25%;
 		max-width: 25%;
 	}
 }
 @media (max-width: 1199px) {
 	.profile-page__part--2,
-	.company-page__part--2 {
+	.profile-edit-page__part--2,
+	.company-page__part--2,
+	.vacancy-page__part--2 {
 		flex: 0 0 40%;
 		max-width: 40%;
 	}
 }
 @media (max-width: 767px) {
 	.profile-page__part--2,
-	.company-page__part--2 {
+	.profile-edit-page__part--2,
+	.company-page__part--2,
+	.vacancy-page__part--2 {
 		flex: 0 0 100%;
 		max-width: 100%;
 		padding-left: 0;
