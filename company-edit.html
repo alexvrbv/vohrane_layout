@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="">
 	<head>
-		<title>Регистрация</title>
+		<title>Редактировать профиль организации</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<!--<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">-->
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -62,7 +62,13 @@
                                 <span>></span>
                             </li>
                              <li>
-                                <span>Регистрация</span>
+                                <a href="#">Моя организация</a>
+                            </li>                            
+                            <li>
+                                <span>></span>
+                            </li>
+                             <li>
+                                <span>Редактировать профиль организации</span>
                             </li>                            
                         </ul>
                     </div>
@@ -73,7 +79,7 @@
 			<div class="container-fluid width-1530">  
  				<div class="row">                             
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <h1>Регистрация</h1>
+                        <h1>Редактировать профиль организации</h1>
                     </div>
                 </div>
             </div>
@@ -82,57 +88,101 @@
 			<div class="container-fluid width-1530">  
  				<div class="row">                             
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="form-page__content form-page-content">
-                            <form class="form-page-content__form form-page-form">
+                        <form class="form-page__content form-page-content">
+                            <div class="form-page-content__form form-page-form">
                                 <div class="container-fluid no-padding">
                                     <div class="row">
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
                                             <div class="form-field">
-                                                <select name="user-type">
-                                                    <option>Тип пользователя</option>
-                                                    <option>Соискатель</option>
-                                                    <option>Работодатель</option>
-                                                    <option>Организация</option>
-                                                </select>
+                                                <input type="text" name="name" placeholder="Название компании" required="">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
                                             <div class="form-field">
-                                                <input type="email" name="email" placeholder="Email" required="">
+                                                <input type="text" name="region" placeholder="Город" required="">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                                            <div class="form-field">
+                                                <input type="text" name="web" placeholder="WEB-сайт" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                                             <div class="form-field">
                                                 <input type="text" name="phone" placeholder="Телефон" required="">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                                             <div class="form-field">
-                                                <input type="password" name="password" placeholder="Пароль" required="">
+                                                <input type="text" name="contact-person" placeholder="Контактное лицо" required="">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                                             <div class="form-field">
-                                                <input type="password" name="password-confirm" placeholder="Подтверждение" required="">
+                                                <input type="text" name="position" placeholder="Должность конт. лица" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                            <div class="form-field">
+                                                <input class="jfilestyle" type="file" name="logo" data-text="Загрузить лого" required="">
+                                            </div>
+                                        </div>                                      
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <div class="form-field profile-edit-form__form-field">
+                                                <textarea rows="6" name="additional-info" placeholder="Описание" required=""></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <div class="form-text">
+                                                <h2>Услуга 1</h2>
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                             <div class="form-field">
                                                 <label>
-                                                    <input type="checkbox" name="confidence" required="">
-                                                    <span>Подтверждение факта ознакомления и согласия с соглашением о конфиденциальности и правилами пользования сайтом</span>
+                                                    <input type="checkbox" name="service" required="">
+                                                    <span>Услуга 1.1</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="service" required="">
+                                                    <span>Услуга 1.2</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="service" required="">
+                                                    <span>Услуга 1.3</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <div class="form-text">
+                                                <h2>Услуга 2</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <div class="form-field">
+                                                <label>
+                                                    <input type="checkbox" name="service" required="">
+                                                    <span>Услуга 2.1</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="service" required="">
+                                                    <span>Услуга 2.2</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="service" required="">
+                                                    <span>Услуга 2.3</span>
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                             <div class="form-submit">
-                                                <input class="btn btn--yellow-border" type="submit" value="Зарегистрироваться">
+                                                <input class="btn btn--yellow-border" type="submit" value="Опубликовать">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </form>                            
-                        </div>
+                            </div>                        
+                        </form>
                     </div>
                 </div>
             </div>
