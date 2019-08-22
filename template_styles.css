@@ -831,6 +831,7 @@ div.jfilestyle label {
 }
 .wrapper--profiles,
 .wrapper--companies,
+.wrapper--vacancies,
 .wrapper--profile-page,
 .wrapper--profile-edit-page,
 .wrapper--company-page,
@@ -840,6 +841,7 @@ div.jfilestyle label {
 }
 .col--profiles,
 .col--companies,
+.col--vacancies,
 .col--profile-page,
 .col--profile-edit-page,
 .col--company-page,
@@ -852,28 +854,32 @@ div.jfilestyle label {
 	align-content: stretch;
 }
 .profiles__part--1,
-.companies__part--1 {
+.companies__part--1,
+.vacancies__part--1 {
 	flex: 0 0 19%;
 	max-width: 19%;
 	padding-right: 30px;
 }
 @media (max-width: 1480px) {
 	.profiles__part--1,
-	.companies__part--1 {
+	.companies__part--1,
+	.vacancies__part--1 {
 		flex: 0 0 25%;
 		max-width: 25%;
 	}
 }
 @media (max-width: 1199px) {
 	.profiles__part--1,
-	.companies__part--1 {
+	.companies__part--1,
+	.vacancies__part--1 {
 		flex: 0 0 40%;
 		max-width: 40%;
 	}
 }
 @media (max-width: 767px) {
 	.profiles__part--1,
-	.companies__part--1 {
+	.companies__part--1,
+	.vacancies__part--1 {
 		flex: 0 0 100%;
 		max-width: 100%;
 		padding-right: 0;
@@ -939,28 +945,32 @@ div.jfilestyle label {
 	background-size: cover;
 }
 .profiles__part--2,
-.companies__part--2 {
+.companies__part--2,
+.vacancies__part--2 {
 	flex: 0 0 81%;
 	max-width: 81%;
 	position: relative;
 }
 @media (max-width: 1480px) {
 	.profiles__part--2,
-	.companies__part--2 {
+	.companies__part--2,
+	.vacancies__part--2 {
 		flex: 0 0 75%;
 		max-width: 75%;
 	}
 }
 @media (max-width: 1199px) {
 	.profiles__part--2,
-	.companies__part--2 {
+	.companies__part--2,
+	.vacancies__part--2 {
 		flex: 0 0 60%;
 		max-width: 60%;
 	}
 }
 @media (max-width: 767px) {
 	.profiles__part--2,
-	.companies__part--2 {
+	.companies__part--2,
+	.vacancies__part--2 {
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
@@ -1034,7 +1044,8 @@ div.jfilestyle label {
 	background-size: cover;
 }
 .profiles__list,
-.companies__list {
+.companies__list,
+.vacancies__list {
 	margin-left: -15px;
 	margin-right: -15px;
 	display: flex;
