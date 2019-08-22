@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="">
 	<head>
-		<title>Авторизация</title>
+		<title>Регистрация</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<!--<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">-->
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -62,7 +62,7 @@
                                 <span>></span>
                             </li>
                              <li>
-                                <span>Авторизация</span>
+                                <span>Регистрация</span>
                             </li>                            
                         </ul>
                     </div>
@@ -73,7 +73,7 @@
 			<div class="container-fluid width-1530">  
  				<div class="row">                             
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <h1>Авторизация</h1>
+                        <h1>Регистрация</h1>
                     </div>
                 </div>
             </div>
@@ -86,9 +86,24 @@
                             <form class="form-page-content__form form-page-form">
                                 <div class="container-fluid no-padding">
                                     <div class="row">
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
                                             <div class="form-field">
-                                                <input type="text" name="email" placeholder="Email / Номер телефона" required="">
+                                                <select name="user-type">
+                                                    <option>Тип пользователя</option>
+                                                    <option>Соискатель</option>
+                                                    <option>Работодатель</option>
+                                                    <option>Организация</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                                            <div class="form-field">
+                                                <input type="email" name="email" placeholder="Email" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                                            <div class="form-field">
+                                                <input type="text" name="phone" placeholder="Телефон" required="">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
@@ -96,14 +111,22 @@
                                                 <input type="password" name="password" placeholder="Пароль" required="">
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                            <div class="form-submit">
-                                                <input class="btn btn--yellow-border" type="submit" value="Опубликовать">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                            <div class="form-field">
+                                                <input type="password" name="password-confirm" placeholder="Подтверждение" required="">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                            <div class="form-text">
-                                                <a href="#">Регистрация</a> / <a href="#">Восстановление пароля</a>
+                                            <div class="form-field">
+                                                <label>
+                                                    <input type="checkbox" name="personal" required="">
+                                                    <span>Подтверждение факта ознакомления и согласия с соглашением о конфиденциальности и правилами пользования сайтом</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <div class="form-submit">
+                                                <input class="btn btn--yellow-border" type="submit" value="Опубликовать">
                                             </div>
                                         </div>
                                     </div>
