@@ -254,6 +254,7 @@ p {
 	line-height: 1.6em;
 }
 a {
+	color: #000000;
 	text-decoration: none;
 }
 ul {
@@ -264,6 +265,7 @@ ul li {
 }
 a:hover,
 a:focus {
+	color: #3D4244;
 	text-decoration: none;	
 }
 img {
@@ -373,6 +375,7 @@ h2 {
 }
 .form-field input[type="text"],
 .form-field input[type="email"],
+.form-field input[type="password"],
 .form-field input[type="file"]:not(.jfilestyle),
 .form-field textarea,
 .form-field select {
@@ -488,8 +491,13 @@ div.jfilestyle label {
 	text-decoration: underline;
 	text-transform: uppercase;
 }
-.form-submit {
+.form-submit,
+.form-text {
 	margin-top: 30px;
+}
+.form-text {
+	font-size: 12px;
+	line-height: 1.2em;
 }
 .wrapper {
 	overflow: hidden;
@@ -1381,7 +1389,8 @@ div.jfilestyle label {
 .profile-page__content,
 .profile-edit-page__content,
 .company-page__content,
-.vacancy-page__content {
+.vacancy-page__content,
+.form-page__content {
 	margin-top: 30px;
 	background-color: #ffffff;
 	padding: 30px;
@@ -1399,6 +1408,11 @@ div.jfilestyle label {
 	.company-page__content,
 	.vacancy-page__content {
 		padding: 15px;
+	}
+}
+@media (max-width: 767px) {
+	.form-page__content {
+		padding: 30px 15px;
 	}
 }
 .profile-page-content__part--1,
@@ -2060,6 +2074,10 @@ div.jfilestyle label {
 		max-width: 100%;
 		padding-left: 0;
 	}
+}
+.form-page-form {
+	width: 100%;
+	margin-top: -30px;
 }
 .wrapper--bottom-banner {
 	padding-top: 90px;
