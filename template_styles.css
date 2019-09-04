@@ -844,7 +844,8 @@ div.jfilestyle label {
 .wrapper--profile-edit-page,
 .wrapper--form-page,
 .wrapper--company-page,
-.wrapper--vacancy-page {
+.wrapper--vacancy-page,
+.wrapper--services-page {
 	padding-bottom: 80px;
 	overflow: visible;
 }
@@ -854,7 +855,8 @@ div.jfilestyle label {
 .col--profile-page,
 .col--profile-edit-page,
 .col--company-page,
-.col--vacancy-page {
+.col--vacancy-page,
+.col--services-page {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -1354,7 +1356,8 @@ div.jfilestyle label {
 .profile-page__part--1,
 .profile-edit-page__part--1,
 .company-page__part--1,
-.vacancy-page__part--1 {
+.vacancy-page__part--1,
+.services-page__part--1 {
 	flex: 0 0 81%;
 	max-width: 81%;
 	position: relative;
@@ -1363,7 +1366,8 @@ div.jfilestyle label {
 	.profile-page__part--1,
 	.profile-edit-page__part--1,
 	.company-page__part--1,
-	.vacancy-page__part--1 {
+	.vacancy-page__part--1,
+	.services-page__part--1 {
 		flex: 0 0 75%;
 		max-width: 75%;
 	}
@@ -1372,7 +1376,8 @@ div.jfilestyle label {
 	.profile-page__part--1,
 	.profile-edit-page__part--1,
 	.company-page__part--1,
-	.vacancy-page__part--1 {
+	.vacancy-page__part--1,
+	.services-page__part--1 {
 		flex: 0 0 60%;
 		max-width: 60%;
 	}
@@ -1381,7 +1386,8 @@ div.jfilestyle label {
 	.profile-page__part--1,
 	.profile-edit-page__part--1,
 	.company-page__part--1,
-	.vacancy-page__part--1 {
+	.vacancy-page__part--1,
+	.services-page__part--1 {
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
@@ -2039,10 +2045,215 @@ div.jfilestyle label {
 		text-align: left;
 	}
 }
+.credit-card {
+	margin-top: 30px;
+	background-color: #ffffff;
+	padding: 30px;
+}
+@media (max-width: 767px) {
+	.credit-card {
+		padding: 30px 15px;
+	}
+}
+.credit-card__title,
+.services__title {
+	font-family: 'Bebas Neue';
+	font-size: 20px;
+	line-height: 1em;
+	font-weight: bold;
+	color: #000000;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.credit-card__info {
+	margin-top: 30px;
+	padding: 60px 50px;
+	border-radius: 15px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.6em;
+	text-transform: uppercase;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 767px) {
+	.credit-card__info {
+		padding: 60px 15px;
+	}
+}
+.credit-card__add {
+	display: block;
+	margin-top: 30px;
+	padding: 50px;
+	border-radius: 15px;
+	text-align: center;
+	border: 1px solid #d7d7d7;
+}
+@media (max-width: 767px) {
+	.credit-card__add {
+		padding: 50px 15px;
+	}
+}
+.credit-card__add:hover,
+.credit-card__add:focus {
+	border: 1px solid #ffffff;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.credit-card__add-img {
+	margin: 0 auto;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	-webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.credit-card__add-img img {
+	width: 22px;
+	height: 22px;
+}
+.credit-card__add-title {
+	margin-top: 25px;
+}
+.services {
+	margin-top: 30px;
+	margin-left: 30px;
+	background-color: #ffffff;
+	padding: 30px;
+}
+@media (max-width: 1199px) {
+	.services {
+		margin-left: 0;
+	}
+}
+@media (max-width: 767px) {
+	.services {
+		padding: 30px 15px;
+	}
+}
+.services__block {
+	margin-top: 30px;
+}
+.services__block:first-child {
+	margin-top: 0;
+}
+.service {
+	margin-top: 30px;
+	border: 1px solid #d7d7d7;
+	border-radius: 15px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;	
+}
+.service:hover,
+.service:focus {
+	border: 1px solid #ffffff;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.service__part--1 {
+	flex: 0 0 25%;
+	max-width: 25%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+@media (max-width: 640px) {
+	.service__part--1 {
+		flex: 0 0 100%;
+		max-width: 100%;
+		height: 200px;
+	}
+}
+.service__img {
+	flex: 0 0 100%;
+	max-width: 100%;
+	background-repeat: no-repeat;
+    background-position: 50% 50%;
+	background-size: cover;
+}
+.service__part--2 {
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding: 40px;
+}
+@media (max-width: 640px) {
+	.service__part--2 {
+		flex: 0 0 60%;
+		max-width: 60%;
+	}
+}
+@media (max-width: 480px) {
+	.service__part--2 {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding: 30px 15px;
+	}
+}
+.service__desc {
+	line-height: 1.6em;
+}
+.service__part--3 {
+	flex: 0 0 25%;
+	max-width: 25%;
+	border-left: 1px solid #d7d7d7;
+	padding: 40px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+@media (max-width: 640px) {
+	.service__part--3 {
+		flex: 0 0 40%;
+		max-width: 40%;
+	}
+}
+@media (max-width: 480px) {
+	.service__part--3 {
+		flex: 0 0 100%;
+		max-width: 100%;
+		border-left: none;
+		justify-content: flex-start;
+		padding: 0 15px 30px;
+	}
+}
+.service__price-value {
+	font-family: 'Bebas Neue';
+	font-size: 20px;
+	line-height: 1em;
+	font-weight: bold;
+	color: #000000;
+	letter-spacing: 2px;
+	text-transform: uppercase;	
+}
+.service__price-currency {
+	margin-top: 10px;
+}
 .profile-page__part--2,
 .profile-edit-page__part--2,
 .company-page__part--2,
-.vacancy-page__part--2 {
+.vacancy-page__part--2,
+.services-page__part--2 {
 	flex: 0 0 19%;
 	max-width: 19%;
 	padding-left: 30px;
@@ -2051,7 +2262,8 @@ div.jfilestyle label {
 	.profile-page__part--2,
 	.profile-edit-page__part--2,
 	.company-page__part--2,
-	.vacancy-page__part--2 {
+	.vacancy-page__part--2,
+	.services-page__part--2 {
 		flex: 0 0 25%;
 		max-width: 25%;
 	}
@@ -2060,7 +2272,8 @@ div.jfilestyle label {
 	.profile-page__part--2,
 	.profile-edit-page__part--2,
 	.company-page__part--2,
-	.vacancy-page__part--2 {
+	.vacancy-page__part--2,
+	.services-page__part--2 {
 		flex: 0 0 40%;
 		max-width: 40%;
 	}
@@ -2069,7 +2282,8 @@ div.jfilestyle label {
 	.profile-page__part--2,
 	.profile-edit-page__part--2,
 	.company-page__part--2,
-	.vacancy-page__part--2 {
+	.vacancy-page__part--2,
+	.services-page__part--2 {
 		flex: 0 0 100%;
 		max-width: 100%;
 		padding-left: 0;
