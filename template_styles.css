@@ -845,7 +845,8 @@ div.jfilestyle label {
 .wrapper--form-page,
 .wrapper--company-page,
 .wrapper--vacancy-page,
-.wrapper--services-page {
+.wrapper--services-page,
+.wrapper--service-page {
 	padding-bottom: 80px;
 	overflow: visible;
 }
@@ -856,7 +857,8 @@ div.jfilestyle label {
 .col--profile-edit-page,
 .col--company-page,
 .col--vacancy-page,
-.col--services-page {
+.col--services-page,
+.col--service-page {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -1357,7 +1359,8 @@ div.jfilestyle label {
 .profile-edit-page__part--1,
 .company-page__part--1,
 .vacancy-page__part--1,
-.services-page__part--1 {
+.services-page__part--1,
+.service-page__part--1 {
 	flex: 0 0 81%;
 	max-width: 81%;
 	position: relative;
@@ -1367,7 +1370,8 @@ div.jfilestyle label {
 	.profile-edit-page__part--1,
 	.company-page__part--1,
 	.vacancy-page__part--1,
-	.services-page__part--1 {
+	.services-page__part--1,
+	.service-page__part--1 {
 		flex: 0 0 75%;
 		max-width: 75%;
 	}
@@ -1377,7 +1381,8 @@ div.jfilestyle label {
 	.profile-edit-page__part--1,
 	.company-page__part--1,
 	.vacancy-page__part--1,
-	.services-page__part--1 {
+	.services-page__part--1,
+	.service-page__part--1 {
 		flex: 0 0 60%;
 		max-width: 60%;
 	}
@@ -1387,7 +1392,8 @@ div.jfilestyle label {
 	.profile-edit-page__part--1,
 	.company-page__part--1,
 	.vacancy-page__part--1,
-	.services-page__part--1 {
+	.services-page__part--1,
+	.service-page__part--1 {
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
@@ -1396,7 +1402,8 @@ div.jfilestyle label {
 .profile-edit-page__content,
 .company-page__content,
 .vacancy-page__content,
-.form-page__content {
+.form-page__content,
+.service-page__content {
 	margin-top: 30px;
 	background-color: #ffffff;
 	padding: 30px;
@@ -1412,7 +1419,8 @@ div.jfilestyle label {
 	.profile-page__content,
 	.profile-edit-page__content,
 	.company-page__content,
-	.vacancy-page__content {
+	.vacancy-page__content,
+	.service-page__content {
 		padding: 15px;
 	}
 }
@@ -1424,7 +1432,8 @@ div.jfilestyle label {
 .profile-page-content__part--1,
 .profile-edit-page-content__part--1,
 .company-page-content__part--1,
-.vacancy-page-content__part--1 {
+.vacancy-page-content__part--1,
+.service-page-content__part--1 {
 	flex: 0 0 20%;
 	max-width: 20%;
 	position: relative;
@@ -1434,7 +1443,8 @@ div.jfilestyle label {
 	.profile-page-content__part--1,
 	.profile-edit-page-content__part--1,
 	.company-page-content__part--1,
-	.vacancy-page-content__part--1 {
+	.vacancy-page-content__part--1,
+	.service-page-content__part--1 {
 		flex: 0 0 30%;
 		max-width: 30%;
 	}
@@ -1443,7 +1453,8 @@ div.jfilestyle label {
 	.profile-page-content__part--1,
 	.profile-edit-page-content__part--1,
 	.company-page-content__part--1,
-	.vacancy-page-content__part--1 {
+	.vacancy-page-content__part--1,
+	.service-page-content__part--1 {
 		flex: 0 0 40%;
 		max-width: 40%;
 	}
@@ -1452,7 +1463,8 @@ div.jfilestyle label {
 	.profile-page-content__part--1,
 	.profile-edit-page-content__part--1,
 	.company-page-content__part--1,
-	.vacancy-page-content__part--1 {
+	.vacancy-page-content__part--1,
+	.service-page-content__part--1 {
 		padding-right: 15px;
 	}
 }
@@ -1460,27 +1472,31 @@ div.jfilestyle label {
 	.profile-page-content__part--1,
 	.profile-edit-page-content__part--1,
 	.company-page-content__part--1,
-	.vacancy-page-content__part--1 {
+	.vacancy-page-content__part--1,
+	.service-page-content__part--1 {
 		flex: 0 0 100%;
 		max-width: 100%;
 		padding-right: 0;
 	}
 }
 .company-page-content__img,
-.vacancy-page-content__img {
+.vacancy-page-content__img,
+.service-page-content__img {
 	padding: 40px;
 	background-color: #f6f7f8;
 }
 @media (max-width: 991px) {
 	.company-page-content__img,
-	.vacancy-page-content__img {
+	.vacancy-page-content__img,
+	.service-page-content__img {
 		padding: 15px;
 	}
 }
 .profile-page-content__part--2,
 .profile-edit-page-content__part--2,
 .company-page-content__part--2,
-.vacancy-page-content__part--2 {
+.vacancy-page-content__part--2,
+.service-page-content__part--2 {
 	flex: 0 0 80%;
 	max-width: 80%;
 	position: relative;
@@ -1495,7 +1511,8 @@ div.jfilestyle label {
 	.profile-page-content__part--2,
 	.profile-edit-page-content__part--2,
 	.company-page-content__part--2,
-	.vacancy-page-content__part--2 {
+	.vacancy-page-content__part--2,
+	.service-page-content__part--2 {
 		flex: 0 0 70%;
 		max-width: 70%;
 	}
@@ -1504,7 +1521,8 @@ div.jfilestyle label {
 	.profile-page-content__part--2,
 	.profile-edit-page-content__part--2,
 	.company-page-content__part--2,
-	.vacancy-page-content__part--2 {
+	.vacancy-page-content__part--2,
+	.service-page-content__part--2 {
 		flex: 0 0 60%;
 		max-width: 60%;
 	}
@@ -1513,7 +1531,8 @@ div.jfilestyle label {
 	.profile-page-content__part--2,
 	.profile-edit-page-content__part--2,
 	.company-page-content__part--2,
-	.vacancy-page-content__part--2 {
+	.vacancy-page-content__part--2,
+	.service-page-content__part--2 {
 		margin-top: 15px;
 		flex: 0 0 100%;
 		max-width: 100%;
@@ -1521,7 +1540,8 @@ div.jfilestyle label {
 }
 .profile-page-content__edit-btn,
 .company-page-content__edit-btn,
-.vacancy-page-content__edit-btn {
+.vacancy-page-content__edit-btn,
+.service-page-content__edit-btn {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1530,7 +1550,8 @@ div.jfilestyle label {
 @media (max-width: 1600px) {
 	.profile-page-content__edit-btn,
 	.company-page-content__edit-btn,
-	.vacancy-page-content__edit-btn {
+	.vacancy-page-content__edit-btn,
+	.service-page-content__edit-btn {
 		width: auto;
 		padding: 10px 15px;
 	}
@@ -1538,7 +1559,8 @@ div.jfilestyle label {
 @media (max-width: 1199px) {
 	.profile-page-content__edit-btn,
 	.company-page-content__edit-btn,
-	.vacancy-page-content__edit-btn {
+	.vacancy-page-content__edit-btn,
+	.service-page-content__edit-btn {
 		position: static;
 		margin-bottom: 20px;
 	}
@@ -1546,13 +1568,15 @@ div.jfilestyle label {
 @media (max-width: 767px) {
 	.profile-page-content__edit-btn,
 	.company-page-content__edit-btn,
-	.vacancy-page-content__edit-btn {
+	.vacancy-page-content__edit-btn,
+	.service-page-content__edit-btn {
 		margin-bottom: 15px;
 	}
 }
 .profile-page-content__title,
 .company-page-content__title,
-.vacancy-page-content__title {
+.vacancy-page-content__title,
+.service-page-content__title {
 	margin-top: 20px;
 	padding-right: 180px;
 	flex: 0 0 100%;
@@ -1567,24 +1591,28 @@ div.jfilestyle label {
 @media (max-width: 1600px) {
 	.profile-page-content__title,
 	.company-page-content__title,
-	.vacancy-page-content__title {
+	.vacancy-page-content__title,
+	.service-page-content__title {
 		padding-right: 160px;
 	}
 }
 @media (max-width: 1199px) {
 	.profile-page-content__title,
 	.company-page-content__title,
-	.vacancy-page-content__title {
+	.vacancy-page-content__title,
+	.service-page-content__title {
 		margin-top: 0;
 		padding-right: 0;
 	}
 }
 .profile-page-content__title > span:first-child,
-.vacancy-page-content__title > span:first-child {
+.vacancy-page-content__title > span:first-child,
+.service-page-content__title > span:first-child {
 	padding-right: 15px;
 }
 .profile-page-content__salary,
-.vacancy-page-content__salary {
+.vacancy-page-content__salary,
+.service-page-content__price {
 	display: inline-block;
 	font-family: 'Montserrat';
 	font-size: 18px;
@@ -2249,11 +2277,21 @@ div.jfilestyle label {
 .service__price-currency {
 	margin-top: 10px;
 }
+.service-page-content__desc {
+	margin-top: 30px;
+	line-height: 1.6em;
+}
+@media (max-width: 767px) {
+	.service-page-content__desc {
+		margin-top: 12px;
+	}
+}
 .profile-page__part--2,
 .profile-edit-page__part--2,
 .company-page__part--2,
 .vacancy-page__part--2,
-.services-page__part--2 {
+.services-page__part--2,
+.service-page__part--2 {
 	flex: 0 0 19%;
 	max-width: 19%;
 	padding-left: 30px;
@@ -2263,7 +2301,8 @@ div.jfilestyle label {
 	.profile-edit-page__part--2,
 	.company-page__part--2,
 	.vacancy-page__part--2,
-	.services-page__part--2 {
+	.services-page__part--2,
+	.service-page__part--2 {
 		flex: 0 0 25%;
 		max-width: 25%;
 	}
@@ -2273,7 +2312,8 @@ div.jfilestyle label {
 	.profile-edit-page__part--2,
 	.company-page__part--2,
 	.vacancy-page__part--2,
-	.services-page__part--2 {
+	.services-page__part--2,
+	.service-page__part--2 {
 		flex: 0 0 40%;
 		max-width: 40%;
 	}
@@ -2283,7 +2323,8 @@ div.jfilestyle label {
 	.profile-edit-page__part--2,
 	.company-page__part--2,
 	.vacancy-page__part--2,
-	.services-page__part--2 {
+	.services-page__part--2,
+	.service-page__part--2 {
 		flex: 0 0 100%;
 		max-width: 100%;
 		padding-left: 0;
