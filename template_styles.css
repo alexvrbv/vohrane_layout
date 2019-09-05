@@ -1797,6 +1797,7 @@ div.jfilestyle label {
 }
 .vacancy__inner {
 	padding: 35px 40px;
+	position: relative;
 }
 @media (max-width: 767px) {
 	.vacancy__inner {
@@ -1867,7 +1868,8 @@ div.jfilestyle label {
 		max-width: 100%;
 	}
 }
-.comment__edit {
+.comment__edit,
+.vacancy__edit {
 	position: absolute;
 	top: 15px;
 	right: 20px;
@@ -1883,17 +1885,21 @@ div.jfilestyle label {
 	text-decoration: underline;
 }
 @media (max-width: 767px) {
-	.comment__edit {
+	.comment__edit,
+	.vacancy__edit {
 		position: static;
 		margin-bottom: 15px;
 	}
 }
 .comment__edit:hover,
-.comment__edit:focus {
+.comment__edit:focus,
+.vacancy__edit:hover,
+.vacancy__edit:focus {
 	color: #999999;
 	text-decoration: none;
 }
-.comment__edit img {
+.comment__edit img,
+.vacancy__edit img {
 	width: 12px;
 	height: 12px;
 	position: relative;
@@ -1935,6 +1941,10 @@ div.jfilestyle label {
 	max-width: 100%;
 	margin-top: 15px;
 	color: #000000;
+}
+.company-page__vacancy-add-wrapper {
+	margin-top: 30px;
+    padding: 0 15px;
 }
 .comments-form {
 	margin-top: 30px;
