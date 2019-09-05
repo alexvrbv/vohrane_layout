@@ -314,6 +314,12 @@ h2 {
 		margin: 0 auto;
 	}
 }
+@media (min-width: 768px) {
+	.width-800 {
+		max-width: 770px;
+		margin: 0 auto;
+	}
+}
 .btn {
 	border-radius: 0;
 	padding: 15px 22px;
@@ -843,10 +849,12 @@ div.jfilestyle label {
 .wrapper--profile-page,
 .wrapper--profile-edit-page,
 .wrapper--form-page,
+.wrapper--info-page,
 .wrapper--company-page,
 .wrapper--vacancy-page,
 .wrapper--services-page,
-.wrapper--service-page {
+.wrapper--service-page,
+.wrapper--contacts-page {
 	padding-bottom: 80px;
 	overflow: visible;
 }
@@ -858,7 +866,8 @@ div.jfilestyle label {
 .col--company-page,
 .col--vacancy-page,
 .col--services-page,
-.col--service-page {
+.col--service-page,
+.col--contacts-page {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -1403,6 +1412,7 @@ div.jfilestyle label {
 .company-page__content,
 .vacancy-page__content,
 .form-page__content,
+.info-page__content,
 .service-page__content {
 	margin-top: 30px;
 	background-color: #ffffff;
@@ -1425,7 +1435,8 @@ div.jfilestyle label {
 	}
 }
 @media (max-width: 767px) {
-	.form-page__content {
+	.form-page__content,
+	.info-page__content {
 		padding: 30px 15px;
 	}
 }
@@ -2344,7 +2355,92 @@ div.jfilestyle label {
 	width: 100%;
 	margin-top: -30px;
 }
-.wrapper--bottom-banner {
+.contacts-page__part--1 {
+	flex: 0 0 30%;
+	max-width: 30%;
+	position: relative;
+}
+@media (max-width: 1480px) {
+	.contacts-page__part--1 {
+		flex: 0 0 30%;
+		max-width: 30%;
+	}
+}
+@media (max-width: 1199px) {
+	.contacts-page__part--1 {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+@media (max-width: 767px) {
+	.contacts-page__part--1 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+.contacts-page__content {
+	margin-right: 30px;
+	margin-top: 30px;
+	padding: 70px;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 767px) {
+	.contacts-page__content {
+		margin-right: 0;
+		padding: 30px 15px;
+	}
+}
+.contacts-page__content-block {
+	margin-top: 30px;
+}
+.contacts-page__content-block:first-child {
+	margin-top: 0;
+}
+.contacts-page__content-block-desc {
+	margin-top: 30px;
+	color: #959595;
+}
+.contacts-page__content-block-desc a {
+	color: #959595;
+}
+.contacts-page__part--2 {
+	flex: 0 0 70%;
+	max-width: 70%;
+	position: relative;
+}
+@media (max-width: 1480px) {
+	.contacts-page__part--2 {
+		flex: 0 0 70%;
+		max-width: 70%;
+	}
+}
+@media (max-width: 1199px) {
+	.contacts-page__part--2 {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+@media (max-width: 767px) {
+	.contacts-page__part--2 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+.contacts-page__map {
+	margin-top: 30px;
+	min-height: 500px;
+	background-color: #ffffff;
+	filter: grayscale(1);
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+	
+}
+.wrapper--bottom-banner,
+.wrapper--bottom-form {
 	padding-top: 90px;
 	padding-bottom: 90px;
 	background-color: #000000;
@@ -2352,6 +2448,10 @@ div.jfilestyle label {
     background-position: 50% 50%;
 	background-size: cover;
 	color: #ffffff;
+}
+.wrapper--bottom-form {
+	background-image: url(img/bottom-form__bg.jpg);
+	position: relative;
 }
 .bottom-banner__title {
 	font-family: 'Bebas Neue';
@@ -2367,6 +2467,60 @@ div.jfilestyle label {
 	font-size: 13px;
 	line-height: 1.6em;
 	font-weight: 500;
+}
+.bottom-form__mask {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.bottom-form__title {
+	font-family: 'Bebas Neue';
+	font-size: 20px;
+	line-height: 1em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.form-field--bottom-form input[type="text"],
+.form-field--bottom-form input[type="email"],
+.form-field--bottom-form textarea {
+	border: none;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #ffffff;
+}
+.form-field--bottom-form input::-webkit-input-placeholder,
+.form-field--bottom-form textarea::-webkit-input-placeholder {
+	color: #ffffff;
+}
+.form-field--bottom-form input:-moz-placeholder,
+.form-field--bottom-form textarea:-moz-placeholder {
+	color: #ffffff;
+} /* FF 4-18 */
+.form-field--bottom-form input::-moz-placeholder,
+.form-field--bottom-form textarea::-moz-placeholder {
+	color: #ffffff;
+} /* FF 19+ */
+.form-field--bottom-form input:-ms-input-placeholder,
+.form-field--bottom-form textarea:-ms-input-placeholder {
+	color: #ffffff;
+} /* IE 10+ */
+.form-field--bottom-form input::-webkit-input-placeholder,
+.form-field--bottom-form textarea::-webkit-input-placeholder {
+	color: #ffffff;
+}
+.form-submit--bottom-form {
+	text-align: center;
+}
+.form-submit--bottom-form .btn {
+	color: #ffffff;
+}
+.form-submit--bottom-form .btn:hover,
+.form-submit--bottom-form .btn:focus {
+	color: #000000;
 }
 .wrapper--footer {
 	min-height: 150px;
